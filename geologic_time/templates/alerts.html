@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Geologic Time</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Alerts</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	  <div data-role="fieldcontain">
+	    <fieldset data-role="controlgroup" data-type="horizontal">
+	      <legend>Set Alert By Wall Clock:</legend>
+
+	      <label for="select-choice-month">Month</label>
+	      <select name="select-choice-month" id="select-choice-month">
+		<option>Hour</option>
+		<option value="9">9</option>
+		<!-- etc. -->
+	      </select>
+
+	      <label for="select-choice-day">Day</label>
+	      <select name="select-choice-day" id="select-choice-day">
+		<option>Minute</option>
+		<option value="15">15</option>
+		<!-- etc. -->
+	      </select>
+ 
+	      <label for="select-choice-year">Year</label>
+	      <select name="select-choice-year" id="select-choice-year">
+		<option>AM/PM</option>
+		<option value="ampm">AM</option>
+		<!-- etc. -->
+	      </select>
+	    </fieldset>
+	  </div>
+	</div><!-- /content -->
+
+	<div data-role="content">	
+	  <div data-role="fieldcontain">
+	    <fieldset data-role="controlgroup" data-type="horizontal">
+	      <legend>Set Alert By Geologic Time:</legend>
+
+	      <label for="select-choice-era">Era</label>
+	      <select name="select-choice-era" id="select-choice-era">
+		<option>Era</option>
+		<option value="ediacaran">Ediacaran</option>
+		<!-- etc. -->
+	      </select>
+
+	      <label for="select-choice-portion">Portion</label>
+	      <select name="select-choice-portion" id="select-choice-portion">
+		<option>Portion</option>
+		<option value="late">late</option>
+		<!-- etc. -->
+	      </select>
+ 
+	      <label for="select-choice-ma">mya</label>
+	      <select name="select-choice-ma" id="select-choice-ma">
+		<option>250</option>
+		<option value="mya">250</option>
+		<!-- etc. -->
+	      </select>
+	    </fieldset>
+	  </div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	  <div data-role="navbar">
+	    <ul>
+	      <li><a href="/" data-icon="home" data-iconpos="top">Home</a></li>
+	      <li><a href="/config" data-icon="gear" data-iconpos="top">Setup</a></li>
+	      <li><a href="/help" data-icon="info" data-iconpos="top">Help</a></li>
+	    </ul>
+	  </div>
+	</div>
+
+      </div><!-- /page -->
+
+</body>
+</html>
